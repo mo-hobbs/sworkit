@@ -1,0 +1,7 @@
+{
+  "name": "sworkit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
