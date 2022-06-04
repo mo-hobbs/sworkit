@@ -1,0 +1,10 @@
+h3, h4 {
+  font-family: 'AvenirNextCyr', sans-serif;
+  src: url(../components/AvenirNextCyr-Regular.otf);
+}
+
+.ripple-parent {
+  position: relative;
+  overflow: hidden;
+}
+
