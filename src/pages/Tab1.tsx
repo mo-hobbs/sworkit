@@ -10,7 +10,9 @@ import {
   IonGrid,
   IonRow,
   IonCol,
-  IonRippleEffect,
+  IonCard,
+  IonCardContent,
+  IonCardTitle,
 } from "@ionic/react";
 
 import ExploreContainer from "../components/ExploreContainer";
@@ -20,6 +22,7 @@ import strength from "../images/category-strength.jpeg";
 import cardio from "../images/category-cardio.jpeg";
 import yoga from "../images/category-yoga.jpeg";
 import stretching from "../images/category-stretching.jpeg";
+
 
 const Tab1: React.FC = () => {
   return (
@@ -34,28 +37,65 @@ const Tab1: React.FC = () => {
           <IonImg src={logo} style={{ width: "200px" }} />
         </IonToolbar>
       </IonHeader>
+
       <ExploreContainer name="Essentials" />
       <IonContent fullscreen className="ion-padding">
         <IonGrid>
           <IonRow>
-            <IonCol>1 of 3</IonCol>
+            <IonCol>
+              <IonCard>
+                <IonCardContent>
+                  <IonRow>
+                    <IonCol>
+                      Sworkit's preventative exercise program may be offered
+                      free through your benefit provider or health insurance.
+                    </IonCol>
+                    <IonCol size="5">
+                      <IonButton style={{ color: "white" }}>
+                        Check Eligibility
+                      </IonButton>
+                    </IonCol>
+                  </IonRow>
+                </IonCardContent>
+              </IonCard>
+            </IonCol>
           </IonRow>
           <h4>Essentials</h4>
           <IonRow>
-            <IonCol size-lg="3">
-              <IonImg src={strength} />
+            <IonCol>
+              <IonCard
+                className="category"
+                style={{ backgroundImage: `url(${strength})` }}
+              >
+                <IonCardTitle>STRENGTH</IonCardTitle>
+              </IonCard>
             </IonCol>
 
-            <IonCol size-lg="3">
-              <IonImg src={cardio} />
+            <IonCol>
+            <IonCard
+                className="category"
+                style={{ backgroundImage: `url(${cardio})` }}
+              >
+                <IonCardTitle>CARDIO</IonCardTitle>
+              </IonCard>
             </IonCol>
           </IonRow>
           <IonRow>
             <IonCol>
-              <IonImg src={yoga} />
+            <IonCard
+                className="category"
+                style={{ backgroundImage: `url(${yoga})` }}
+              >
+                <IonCardTitle>YOGA</IonCardTitle>
+              </IonCard>
             </IonCol>
             <IonCol>
-              <IonImg src={stretching} />
+            <IonCard
+                className="category"
+                style={{ backgroundImage: `url(${stretching})` }}
+              >
+                <IonCardTitle>STRETCHING</IonCardTitle>
+              </IonCard>
             </IonCol>
           </IonRow>
         </IonGrid>
