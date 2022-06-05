@@ -1,3 +1,8 @@
+/* @font-face {
+  font-family: 'AvenirNextCyr', sans-serif;;
+  src: url("./themes/AvenirNextCyr-Regular.otf");
+} */
+
 .container {
   text-align: center;
   position: absolute;
@@ -5,15 +10,11 @@
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  font-family: 'AvenirNextCyr', sans-serif;
-  src: url(./AvenirNextCyr-Regular.otf);
 }
 
 .container strong {
   font-size: 20px;
   line-height: 26px;
-  font-family: 'AvenirNextCyr', sans-serif;
-  src: url(./AvenirNextCyr-Bold.otf);
 }
 
 .container p {
