@@ -1,7 +1,21 @@
-h3, h4 {
+.category {
   font-family: 'AvenirNextCyr', sans-serif;
-  src: url(../components/AvenirNextCyr-Regular.otf);
+  src: url(../theme/AvenirNextCyrBold.otf);
+  font-weight: bold;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-sw-blue-steel);
+  height: 200px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: var(--platform-border-radius);
 }
+
 
 .ripple-parent {
   position: relative;
